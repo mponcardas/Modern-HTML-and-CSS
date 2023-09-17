@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Forms & Input</title>
+
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<form action="process.php">
+		<!-- Text -->
+		<div>
+			<label for="name">Name</label><br>
+			<input type="text" id="name" name="name">
+		</div>
+
+		<!-- Email -->
+		<br>
+		<div>
+			<label for="email">Email</label><br>
+			<input type="email" name="email" id="email" placeholder="Enter email">
+		</div>
+
+		<!-- Textarea -->
+		<br>
+		<div>
+			<label for="message">Message</label><br>
+			<textarea name="message" id="id" cols="30" rows="10"></textarea>
+		</div>
+
+		<!-- Select -->
+		<br>
+		<div>
+			<label for="sex">Sex</label>
+			<select name="sex" id="sex">
+				<option value="male">Male</option>
+				<option value="female">Male</option>
+				<option value="others">Others</option>
+			</select>
+		</div>
+
+		<!-- Number -->
+		<br>
+		<div>
+			<label for="age">Age</label>
+			<input type="number" name="age" id="age">
+		</div>
+
+		<!-- Date -->
+		<br>
+		<div>
+			<label for="birthdate">Birthdate</label><br>
+			<input type="date" name="birthdate" id="birthdate">
+		</div>
+
+		<!-- Radio button -->
+		<br>
+		<div>
+			<label for="membership">Membership</label><br>
+			<input type="radio" name="membership" id="membership" value="Mini"> Mini <br>
+			<input type="radio" name="membership" id="membership" value="Pro"> Pro <br>
+			<input type="radio" name="membership" id="membership" value="Max"> Max
+		</div>
+
+		<!-- Checkbox -->
+		<br>
+		<div>
+			<label for="addons">Addons</label><br>
+			<input type="checkbox" name="addons" id="addons" value="storage"> Storage <br>
+			<input type="checkbox" name="addons" id="addons" value="processor"> Processor <br>
+			<input type="checkbox" name="addons" id="addons" value="memory"> Memory
+		</div>
+
+		<br>
+		<input type="submit" value="Submit">
+
+		<button type="reset">Reset</button>
+	</form>
+</body>
+</html>
