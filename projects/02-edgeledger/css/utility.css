@@ -64,7 +64,7 @@
 }
 
 /* Flex columns */
-.flex-column.flex-reverse .row {
+.flex-column.flex-reverse .row{
 	flex-direction: row-reverse;
 }
 

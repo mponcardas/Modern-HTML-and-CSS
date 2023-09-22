@@ -111,6 +111,11 @@ img {
 	background: rgba(0, 0, 0, 0.6);
 }
 
+.hero.blog {
+	background: url('../img/home/blog.jpg') no-repeat center center/cover;
+	height: 30vh;
+}
+
 /* Icons */
 .icons {
 	padding: 1.87rem;
