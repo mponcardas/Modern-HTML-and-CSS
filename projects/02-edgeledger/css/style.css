@@ -48,6 +48,7 @@ img {
 	position: fixed;
 	top: 0;
 	padding: 0 1.875rem;
+	z-index: 99;
 }
 
 .navbar a {
@@ -74,6 +75,10 @@ img {
 	height: 100vh;
 	position: relative;
 	color: #fff;
+}
+
+.content * {
+	z-index: 1;
 }
 
 .hero .content {
@@ -104,10 +109,6 @@ img {
 	height: 100%;
 	width: 100%;
 	background: rgba(0, 0, 0, 0.6);
-}
-
-.hero * {
-	z-index: 10;
 }
 
 /* Icons */
@@ -192,4 +193,43 @@ img {
 
 .footer p {
 	margin-top: 1.5rem;
+}
+
+/* Mobile */
+@media(max-width: 768px) {
+	.navbar {
+		flex-direction: column;
+		height: 7.5rem;
+		padding: 1.25rem;
+	}
+
+	.navbar a {
+		padding: 10px 10px;
+		margin: 0 3px;
+	}
+
+	.flex-items {
+		flex-direction: column;
+	}
+
+	.flex-column .column {
+		flex: 100%;
+		max-width: 100%;
+	}
+
+	.flex-grid .column {
+		flex: 50%;
+		max-width: 100%;
+	}
+}
+
+@media(max-width: 600px) {
+	.flex-grid .column {
+		flex: 100%;
+		max-width: 100%;
+	}
+
+	.flex-grid .column img {
+		height: auto;
+	}
 }
