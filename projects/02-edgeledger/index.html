@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/lightbox.css">
 	<link rel="stylesheet" href="css/utility.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Welcome Edgeledger</title>
@@ -98,12 +99,21 @@
 
 			<div class="row">
 				<div class="column">
-					<img src="img/cases/cases1.jpg" alt="">
-					<img src="img/cases/cases2.jpg" alt="">
+					<a href="img/cases/cases1.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, eius">
+						<img src="img/cases/cases1.jpg" alt="">
+					</a>
+					
+					<a href="img/cases/cases2.jpg" data-lightbox="cases"
+						data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, eius">
+						<img src="img/cases/cases2.jpg" alt="">
+					</a>
 				</div>
 
 				<div class="column">
-					<img src="img/cases/cases3.jpg" alt="">
+					<a href="img/cases/cases3.jpg" data-lightbox="cases"
+						data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, eius">
+						<img src="img/cases/cases3.jpg" alt="">
+					</a>
 					<img src="img/cases/cases4.jpg" alt="">
 				</div>
 
@@ -219,7 +229,10 @@
 	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
-		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+	</script>
+
+	<script src="js/lightbox.js"></script>
 
 	<script>
 		const navbar = document.getElementById('navbar');
