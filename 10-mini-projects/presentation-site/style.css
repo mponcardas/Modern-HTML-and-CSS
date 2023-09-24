@@ -6,7 +6,7 @@
 	--page-3-color: #155EEF;
 	--page-4-color: #DC6803;
 
-	--animate-speed: 1s;
+	--animate-speed: 0.5s;
 
 	--text-color-light: #f4f4f4;
 	--text-color-dark: #333;
@@ -44,7 +44,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	padding: 0 2rem;
+	padding: 0 4rem;
 }
 
 .page h1 {
@@ -78,4 +78,28 @@ body {
 .btn:hover {
 	background: var(--bg-dark);
 	color: var(--text-color-light);
+}
+
+/* Page animation */
+#page-1 h1 {
+	transform: translateY(-1200px);
+	animation: heading var(--animate-speed) forwards ease-in-out;
+}
+
+#page-1 p {
+	transform: translateX(-1800px);
+	animation: paragraph var(--animate-speed) forwards 0.3s ease-in-out;
+}
+
+/* Keyframes */
+@keyframes heading {
+	to {
+		transform: translateY(0);
+	}
+}
+
+@keyframes paragraph {
+	to {
+		transform: translateX(0);
+	}
 }
