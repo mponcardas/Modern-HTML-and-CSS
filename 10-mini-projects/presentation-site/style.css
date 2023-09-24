@@ -1,1 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap');
+
+:root {
+	--page-1-color: #7F56D9;
+	--page-2-color: #099250;
+	--page-3-color: #155EEF;
+	--page-4-color: #DC6803;
+
+	--animate-speed: 1s;
+
+	--text-color-light: #f4f4f4;
+	--text-color-dark: #333;
+
+	--bg-light: #f4f4f4;
+	--bg-dark: #333;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Manrope', sans-serif;
+	line-height: 1.4;
+	color: #fff;
+	overflow: hidden;
+}
+
+/* Page colors */
+#page-1 { background: var(--page-1-color); }
+#page-2 { background: var(--page-2-color); }
+#page-3 { background: var(--page-3-color); }
+#page-4 { background: var(--page-4-color); }
+
+.page {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 0 2rem;
+}
+
+.page h1 {
+	font-size: 4rem;
+	line-height: 1;
+	margin: 3rem 1rem;
+}
+
+.page p {
+	font-size: 1.3rem;
+	text-align: left;
+}
+
+.btn {
+	display: inline-block;
+	padding: 1rem 2rem;
+	background: var(--bg-light);
+	color: #333;
+	text-decoration: none;
+	border: none;
+	border-radius: 0.5rem;
+	margin: 2rem 0.5rem;
+	font-size: 1.1rem;
+	transition: all 0.1s ease-in;
+}
+
+.btn i {
+	margin-left: 0.3rem;
+}
+
+.btn:hover {
+	background: var(--bg-dark);
+	color: var(--text-color-light);
+}
